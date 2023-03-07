@@ -1,271 +1,51 @@
-/* General Styles */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #f1f1f1;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
 }
-
-a {
-  color: #222;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Header Styles */
 
 header {
-  background-color: #fff;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-header::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
-.logo {
-  float: left;
-  margin-top: 10px;
-}
-
-.logo img {
-  height: 60px;
-}
-
-nav {
-  float: right;
-  margin-top: 30px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
 }
 
 nav ul {
-  list-style: none;
-  display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
 }
 
-nav ul li {
-  float: left;
-  margin-left: 70px;
+nav li {
+	margin: 0 20px;
 }
 
-nav ul li a {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+nav a {
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
-nav ul li a:hover {
-  color: #ff4c4c;
+main {
+	margin-top: 80px;
 }
 
-/* Showcase Styles */
-
-#showcase {
-  height: 500px;
-  background: url('https://gurses.people.caltech.edu/teaser.jpg') no-repeat center center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
+#hero {
+	background-color: #f7f7f7;
+	padding: 100px 0;
+	text-align: center;
 }
 
-#showcase h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-#showcase p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background-color: #ff4c4c;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #d64141;
-}
-
-/* Services Styles */
-
-#services {
-  padding: 100px 0;
-  background-color: #fff;
-  text-align: center;
-}
-
-#services h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-.box {
-  display: inline-block;
-  width: 300px;
-  margin: 0 30px;
-  text-align: left;
-}
-
-.box img {
-  width: 100%;
-}
-
-.box h3 {
-  font-size: 24px;
-  margin: 20px 0;
-}
-
-.box p {
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-/* About Styles */
-
-#about {
-  padding: 100px 0;
-  background-color: #f1f1f1;
-  text-align: center;
-}
-
-#about h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-#about p {
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-/* Contact Styles */
-
-/* Contact Styles */
-
-#contact {
-  padding: 100px 0;
-  background-color: #fff;
-  text-align: center;
-}
-
-#contact h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-form {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.form-control {
-  width: 50%;
-  margin-bottom: 20px;
-  padding: 0 15px;
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  background-color: #f2f2f2;
-}
-
-.form-control input[type="text"],
-.form-control input[type="email"] {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-  color: #333;
-  border: none;
-  background-color: transparent;
-}
-
-.form-control input[type="text"]:focus,
-.form-control input[type="email"]:focus {
-  outline: none;
-}
-
-.btn-submit {
-  display: inline-block;
-  background-color: #ff4c4c;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-submit:hover {
-  background-color: #d64141;
-}
-
-/* Footer Styles */
-
-footer {
-  padding: 50px 0;
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-}
-
-footer p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #fff;
-}
-
-.social {
-  margin-top: 20px;
-}
-
-.social a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #222;
-  line-height: 40px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.social a:hover {
-  background-color: #ff4c4c;
-  color: #fff;
-}
+#hero h1 {
+	font-size: 48px;
+	margin-bottom: 
