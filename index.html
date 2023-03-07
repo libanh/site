@@ -1,75 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Liban Hussein - Graduate Research Assistant @ the EMiT Lab</title>
-    <link rel="stylesheet" type="text/css" href="foundations.css">
+    <title>Liban Hussein</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="foundations.css">
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
-        <h2>Biomedical Devices and Electronics PhD Student</h2>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#conferences">Conferences</a></li>
-                <li><a href="#media">Media Coverage</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>My Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <img src="https://via.placeholder.com/300" alt="Profile Picture">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod mauris eu leo aliquet, vitae iaculis enim lobortis. Vivamus hendrerit pharetra enim, nec pretium nisl sagittis a. Ut imperdiet magna eu mauris tristique, auctor interdum neque rhoncus.</p>
-            </div>
-        </section>
+    <section id="about">
+        <div class="container">
+            <img src="https://via.placeholder.com/500x500" alt="My Profile Picture">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum purus vitae finibus aliquam. Sed faucibus velit ut diam consectetur, a varius sapien varius. Nulla facilisi. Nunc bibendum sollicitudin magna, eu vehicula libero sagittis ac. Pellentesque vitae nulla sed tellus varius consequat ut in nisi.</p>
+        </div>
+    </section>
 
-        <section id="publications">
-            <div class="container">
-                <h2>Publications</h2>
-                <img src="https://via.placeholder.com/300" alt="Publications Image">
-                <ul>
-                    <li><a href="#">Publication Title 1</a></li>
-                    <li><a href="#">Publication Title 2</a></li>
-                    <li><a href="#">Publication Title 3</a></li>
-                    <li><a href="#">Publication Title 4</a></li>
-                </ul>
-            </div>
-        </section>
+    <section id="research">
+        <div class="container">
+            <h2>Research</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Etiam condimentum purus vitae finibus aliquam</li>
+                <li>Sed faucibus velit ut diam consectetur</li>
+                <li>A varius sapien varius</li>
+            </ul>
+        </div>
+    </section>
 
-        <section id="conferences">
-            <div class="container">
-                <h2>Conferences</h2>
-                <img src="https://via.placeholder.com/300" alt="Conferences Image">
-                <ul>
-                    <li><a href="#">Conference Name 1</a></li>
-                    <li><a href="#">Conference Name 2</a></li>
-                    <li><a href="#">Conference Name 3</a></li>
-                    <li><a href="#">Conference Name 4</a></li>
-                </ul>
-            </div>
-        </section>
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Etiam condimentum purus vitae finibus aliquam</li>
+                <li>Sed faucibus velit ut diam consectetur</li>
+                <li>A varius sapien varius</li>
+            </ul>
+        </div>
+    </section>
 
-        <section id="media">
-            <div class="container">
-                <h2>Media Coverage</h2>
-                <img src="https://via.placeholder.com/300" alt="Media Coverage Image">
-                <ul>
-                    <li><a href="#">Media Coverage Title 1</a></li>
-                    <li><a href="#">Media Coverage Title 2</a></li>
-                    <li><a href="#">Media Coverage Title 3</a></li>
-                    <li><a href="#">Media Coverage Title 4</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; John Doe 2023</p>
+        <div class="container">
+            <p>&copy; 2023 University of Washington. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
