@@ -1,159 +1,56 @@
-/* Reset default styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Body styles */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
-  color: #333333;
-  background: #f0f0f0;
+  line-height: 1.5;
 }
 
-/* Header styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 header {
-  background-color: #0071c1;
-  color: #ffffff;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
-
-header h1 {
-  margin-left: 40px;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-header nav {
-  float: right;
-  margin-right: 40px;
-}
-
-header nav ul {
-  list-style: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
-header nav ul li {
+header img {
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
   margin-left: 20px;
 }
 
-header nav ul li:first-child {
-  margin-left: 0;
-}
-
-header nav ul li a {
-  color: #ffffff;
+nav a {
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  color: black;
 }
 
-header nav ul li a:hover {
-  color: #f0f0f0;
+nav a:hover {
+  color: gray;
 }
 
-/* Section styles */
+main {
+  padding: 20px 0;
+}
+
 section {
-  padding: 60px 0;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-section p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-section ul {
-  list-style: none;
-  margin-bottom: 30px;
-}
-
-section ul li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: left;
-  line-height: 1.4;
-}
-
-/* About section styles */
-#about {
-  background-color: #ffffff;
-}
-
-#about img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-
-/* Contact section styles */
-#contact {
-  background-color: #f5f5f5;
-}
-
-#contact form {
-  display: inline-block;
-  text-align: left;
-}
-
-#contact form label {
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-#contact form input[type="text"],
-#contact form input[type="email"],
-#contact form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-}
-
-#contact form textarea {
-  height: 150px;
-}
-
-#contact form button[type="submit"] {
-  background-color: #0071c1;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-#contact form button[type="submit"]:hover {
-  background-color: #005ca9;
-}
-
-/* Footer styles */
-footer {
-  background-color: #111111;
-  color: #f0f0f0;
-  padding: 20px
+  padding: 40px 0;
+ 
