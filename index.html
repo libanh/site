@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Personal Website</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="foundations.css">
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="https://i.imgur.com/4g4v7Y3.jpg" alt="My Name">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#conferences">Conferences</a></li>
-          <li><a href="#media">Media Coverage</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <img src="https://i.imgur.com/1dlJ6Uz.jpg" alt="Personal Photo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis arcu at massa molestie molestie. Duis faucibus orci nec ipsum consectetur, a aliquet quam laoreet. Donec non enim sapien. Nam pellentesque elit vel felis ultrices, a semper elit bibendum. Aliquam pretium nunc justo, ut tristique leo rhoncus id. Nullam venenatis lorem augue, vel posuere est dictum eget. Duis et lacus quis quam posuere rhoncus. Nam vitae nibh ut nunc ultrices interdum ut id sapien.</p>
-      </section>
-      
-      <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-          <li><a href="#">Publication 1</a></li>
-          <li><a href="#">Publication 2</a></li>
-          <li><a href="#">Publication 3</a></li>
-        </ul>
-      </section>
-      
-      <section id="conferences">
-        <h2>Conferences</h2>
-        <ul>
-          <li><a href="#">Conference 1</a></li>
-          <li><a href="#">Conference 2</a></li>
-          <li><a href="#">Conference 3</a></li>
-        </ul>
-      </section>
-      
-      <section id="media">
-        <h2>Media Coverage</h2>
-        <ul>
-          <li><a href="#">Media Coverage 1</a></li>
-          <li><a href="#">Media Coverage 2</a></li>
-          <li><a href="#">Media Coverage 3</a></li>
-        </ul>
-      </section>
-    </main>
-    
-    <footer>
-      <p>&copy; 2023 My Personal Website</p>
-    </footer>
-  </div>
+	<header>
+		<div class="container">
+			<h1>My Website</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Welcome to my website</h1>
+			<p>This is a sample text for my website. You can replace this with your own content.</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</section>
+
+	<section id="services">
+		<div class="container">
+			<h1>Our Services</h1>
+			<div class="box">
+				<img src="https://via.placeholder.com/350x250" alt="Service Image">
+				<h3>Service 1</h3>
+				<p>This is a sample text for Service 1. You can replace this with your own content.</p>
+			</div>
+			<div class="box">
+				<img src="https://via.placeholder.com/350x250" alt="Service Image">
+				<h3>Service 2</h3>
+				<p>This is a sample text for Service 2. You can replace this with your own content.</p>
+			</div>
+			<div class="box">
+				<img src="https://via.placeholder.com/350x250" alt="Service Image">
+				<h3>Service 3</h3>
+				<p>This is a sample text for Service 3. You can replace this with your own content.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h1>About Us</h1>
+			<p>This is a sample text about us. You can replace this with your own content.</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<h1>Contact Us</h1>
+			<form>
+				<label>Name</label>
+				<input type="text" placeholder="Enter your name">
+				<label>Email</label>
+				<input type="email" placeholder="Enter your email">
+				<label>Message</label>
+				<textarea placeholder="Enter your message"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 My Website</p>
+		</div>
+	</footer>
+
 </body>
 </html>
