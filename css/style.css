@@ -1,316 +1,68 @@
-/* Global Styles */
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: #4B2E83;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 20px;
-}
-
-/* Header Styles */
-
-header {
+/* Awards */
+.awards-section {
   background-color: #4B2E83;
-  color: #fff;
-  padding: 30px 20px;
+  color: #FFF;
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
 
-#branding {
-  float: left;
-}
-
-#branding h1 {
-  margin: 0;
-}
-
-header nav {
-  float: right;
-  margin-top: 10px;
-}
-
-header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-header li {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-header a:hover {
-  color: #F2F2F2;
-}
-
-/* Showcase Styles */
-
-#showcase {
-  background-color: #F2F2F2;
-  padding: 200px 0;
-  text-align: center;
-  color: #4B2E83;
-}
-
-#showcase h1 {
-  color: #4B2E83;
-  font-size: 48px;
-  font-weight: bold;
+.award {
   margin-bottom: 20px;
 }
 
-#showcase p {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* About Page Styles */
-
-#about {
-  padding: 40px;
-}
-
-#about h1 {
-  color: #4B2E83;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-#about img {
-  float: left;
-  margin-right: 20px;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-#about p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Research Page Styles */
-
-#research {
-  background-color: #F2F2F2;
-  padding: 40px;
-}
-
-#research h1 {
-  color: #4B2E83;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-#research p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-#research ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-#research li {
-  margin-bottom: 20px;
-}
-
-#research .research-title {
-  color: #4B2E83;
+.award-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
-#research .research-date {
-  color: #6F4E37;
-  font-size: 16px;
-  font-style: italic;
-}
-
-#publications p {
+.award-description {
   font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
 }
 
-#publications ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-#publications li {
-  margin-bottom: 20px;
-}
-
-#publications .publication-title {
-  color: #4B2E83;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#publications .publication-date {
-  color: #6F4E37;
-  font-size: 16px;
-  font-style: italic;
-}
-
-/* Awards Page Styles */
-
-#awards {
-  padding: 40px;
-}
-
-#awards h1 {
-  color: #4B2E83;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-#awards p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-#awards ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-#awards li {
-  margin-bottom: 20px;
-}
-
-#awards .award-title {
-  color: #4B2E83;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#awards .award-date {
-  color: #6F4E37;
-  font-size: 16px;
-  font-style: italic;
-}
-
-/* Teaching and Outreach Page Styles */
-
-#teaching {
-  background-color: #F2F2F2;
-  padding: 40px;
-}
-
-#teaching h1 {
-  color: #4B2E83;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-#teaching p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-#teaching ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-#teaching li {
-  margin-bottom: 20px;
-}
-
-#teaching .teaching-title {
-  color: #4B2E83;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#teaching .teaching-date {
-  color: #6F4E37;
-  font-size: 16px;
-  font-style: italic;
-}
-
-/* Footer Styles */
-
-footer {
+/* Teaching and Outreach */
+.teaching-section {
   background-color: #4B2E83;
-  color: #fff;
+  color: #FFF;
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.course {
+  margin-bottom: 20px;
+}
+
+.course-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.course-description {
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #FFF;
   padding: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 
-footer p {
-  margin: 0;
-  font-size: 14px;
+.footer a {
+  color: #FFF;
 }
 
-/* Media Query for Mobile Devices */
-
-@media (max-width: 600px) {
-  header nav, header ul, header li {
-    display: block;
-    text-align: center;
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
   }
-
-  header li {
-    margin: 10px 0;
+  .hero-section h1 {
+    font-size: 36px;
   }
-
-  #showcase h1 {
-    font-size: 32px;
-  }
-
-  #showcase p {
-    font-size: 20px;
-  }
-
-  #about img {
-    float: none;
-    margin-right: 0;
+  .hero-section p {
+    font-size: 18px;
   }
 }
-
