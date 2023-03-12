@@ -1,179 +1,286 @@
 /* Global Styles */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #444;
-	background-color: #f9f9f9;
-}
-
-a {
-	color: #007bff;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6em;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-
-/* Header Styles */
 
 header {
-	background-color: #fff;
-	box-shadow: 0 4px 12px rgba(0,0,0,.1);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1;
+  background-color: #222;
+  color: #fff;
+  padding-top: 20px;
+  min-height: 70px;
+  border-bottom: 3px solid #2A2A2A;
 }
 
-.profile {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px 0;
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.profile-image {
-	flex: 0 0 200px;
-	margin-right: 20px;
-	border-radius: 50%;
-	overflow: hidden;
-	border: 4px solid #fff;
-	box-shadow: 0 4px 12px rgba(0,0,0,.1);
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-right: 20px;
 }
 
-.profile-image img {
-	display: block;
-	width: 100%;
-	height: auto;
+header li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 25px;
+  position: relative;
 }
 
-.profile-content {
-	flex: 1;
+header #branding {
+  float: left;
+  padding: 10px 0;
+  margin-left: 20px;
 }
 
-.profile-content h1 {
-	font-size: 36px;
-	margin: 0 0 10px;
+header #branding h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-.profile-content h2 {
-	font-size: 24px;
-	font-weight: normal;
-	margin: 0 0 10px;
+header nav {
+  float: right;
+  margin-top: 10px;
 }
 
-.profile-content h3 {
-	font-size: 20px;
-	font-weight: normal;
-	margin: 0 0 10px;
+header .current a {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
-.profile-content h4 {
-	font-size: 16px;
-	font-weight: normal;
-	margin: 0;
-	color: #666;
+header a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
-nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+/* Home Page Styles */
+
+#showcase {
+  min-height: 400px;
+  background: url('../images/showcase.jpg') no-repeat 0 -200px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
 }
 
-nav ul li {
-	margin-left: 20px;
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 3.5em;
+  margin-bottom: 20px;
 }
 
-nav ul li:first-child {
-	margin-left: 0;
+#showcase p {
+  font-size: 1.5em;
 }
 
-nav ul li a {
-	display: block;
-	padding: 10px 0;
-	color: #444;
-	font-weight: bold;
+/* About Page Styles */
+
+#about {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-nav ul li a:hover {
-	color: #007bff;
+#about h1 {
+  margin-bottom: 20px;
 }
 
-/* Main Styles */
-
-main {
-	margin-top: 100px;
+#about p {
+  margin-bottom: 20px;
 }
 
-h1, h2, h3, h4 {
-	margin-top: 0;
-	color: #007bff;
+#about img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 250px;
 }
 
-section {
-	padding: 80px 0;
-	background-color: #fff;
-	box-shadow: 0 4px 12px rgba(0,0,0,.1);
-	border-radius: 4px;
-	margin-bottom: 40px;
+/* Research Page Styles */
+
+#research {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-section h1 {
-	font-size: 36px;
-	margin-bottom: 30px;
-	color: #444;
+#research h1 {
+  margin-bottom: 20px;
 }
 
-section p {
-	margin-bottom: 30px;
-	line-height: 1.6;
+#research p {
+  margin-bottom: 20px;
 }
 
-section ul {
-	margin-bottom: 30px;
+/* Publications Page Styles */
+
+#publications {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-section ul li {
-	margin-bottom: 10px;
+#publications h1 {
+  margin-bottom: 20px;
 }
 
-.button {
-	display: inline-block;
-	padding: 10px 20px;
-	background-color: #007bff;
-	color: #fff;
-	border-radius: 4px;
-	text-transform: uppercase;
-	font-weight: bold;
+#publications p {
+  margin-bottom: 20px;
 }
 
-.button:hover {
-	background-color: #0069d9;
-	cursor: pointer;
+#publications ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#publications li {
+  margin-bottom: 20px;
+}
+
+#publications .citation {
+  font-style: italic;
+}
+
+/* Awards Page Styles */
+
+#awards {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#awards h1 {
+  margin-bottom: 20px;
+}
+
+#awards p {
+  margin-bottom: 20px;
+}
+
+#awards ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#awards li {
+  margin-bottom: 20px;
+}
+
+#awards .award-title {
+  font-weight: bold;
+}
+
+#awards .award-date {
+  font-style: italic;
+  color: #666;
+}
+
+/* Teaching and Outreach Page Styles */
+
+#teaching {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#teaching h1 {
+  margin-bottom: 20px;
+}
+
+#teaching p {
+  margin-bottom: 20px;
+}
+
+#teaching ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#teaching li {
+  margin-bottom: 20px;
+}
+
+#teaching .teaching-title {
+  font-weight: bold;
+}
+
+#teaching .teaching-date {
+  font-style: italic;
+  color: #666;
 }
 
 /* Footer Styles */
 
 footer {
-	background-color: #444;
-	color: #fff;
-	padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 footer p {
-	margin: 0;
-	font-size: 14px;
-	line-height:
+  font-size: 0.8em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media(max-width:768px) {
+  header {
+    padding-top: 50px;
+  }
+
+  #branding {
+    float: none;
+    text-align: center;
+  }
+
+  header ul {
+    float: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+  }
+
+  header li {
+    display: block;
+    text-align: center;
+    margin-left: -40px;
+  }
+
+  #showcase h1 {
+    font-size: 2.5em;
+  }
+
+  #about img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
