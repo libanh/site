@@ -1,68 +1,119 @@
-/* Awards */
-.awards-section {
-  background-color: #4B2E83;
-  color: #FFF;
-  padding: 50px;
-  margin-bottom: 50px;
-  border-radius: 10px;
+/* CSS for the Liban Hussein website */
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-.award {
-  margin-bottom: 20px;
+/* Header */
+header {
+  background-color: #5c2d91;
+  padding: 20px;
+  color: #fff;
 }
 
-.award-title {
-  font-size: 24px;
+header h1 {
+  margin: 0;
+  font-size: 36px;
   font-weight: bold;
 }
 
-.award-description {
-  font-size: 18px;
-}
-
-/* Teaching and Outreach */
-.teaching-section {
-  background-color: #4B2E83;
-  color: #FFF;
-  padding: 50px;
-  margin-bottom: 50px;
-  border-radius: 10px;
-}
-
-.course {
+/* Navigation */
+nav {
+  background-color: #fff;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
-.course-title {
-  font-size: 24px;
-  font-weight: bold;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.course-description {
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #5c2d91;
+  text-decoration: none;
   font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Main content */
+main {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #5c2d91;
+}
+
+section p {
+  margin: 0;
+}
+
+/* Awards section */
+#awards {
+  background-color: #ffdab9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#awards h2 {
+  color: #5c2d91;
 }
 
 /* Footer */
-.footer {
-  background-color: #000;
-  color: #FFF;
+footer {
+  background-color: #5c2d91;
+  color: #fff;
   padding: 20px;
   text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #fff;
 }
 
-.footer a {
-  color: #FFF;
+footer p {
+  margin: 0;
 }
 
-/* Media Query */
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-  .hero-section h1 {
-    font-size: 36px;
-  }
-  .hero-section p {
-    font-size: 18px;
-  }
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffdab9;
 }
