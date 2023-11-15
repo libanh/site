@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -9,54 +10,96 @@ body, html {
     margin: auto;
 }
 
-header {
-    background: url('header-background.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.header {
+    background-color: #4b2e83; /* UW Purple */
+    color: white;
+    background-image: url('path-to-uw-logo.png'); /* Update with the path to the UW logo */
+    background-repeat: no-repeat;
+    background-position: 10px 10px; /* or wherever you want the logo to appear */
+    padding-left: 120px; /* Give space for the logo */
 }
 
-nav ul {
+.nav ul {
     padding: 0;
     list-style-type: none;
 }
 
-nav ul li {
+.nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
+.nav ul li a {
+    color: white;
     text-decoration: none;
+    padding: 14px 16px;
 }
 
-main {
+.nav ul li a.active, .nav ul li a:hover {
+    background-color: #b7a57a; /* UW Gold, used for hover state */
+}
+
+.main-content {
     display: flex;
     margin: 20px;
 }
 
-.profile {
-    flex: 1;
-    margin-right: 20px;
+.sidebar {
+    width: 200px;
+    background-color: #e8e9eb; /* Light grey background for sidebar */
+    padding: 20px;
 }
 
-.profile img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+.sidebar h2, .sidebar a {
+    color: #4b2e83; /* UW Purple */
+}
+
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
 }
 
 .content {
-    flex: 3;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+.content h1, .content h2 {
+    color: #4b2e83; /* UW Purple */
+}
+
+.content h2 {
+    border-bottom: 2px solid #4b2e83;
+    padding-bottom: 5px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content li {
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 3px solid #4b2e83; /* UW Purple */
+}
+
+.footer {
+    background-color: #4b2e83; /* UW Purple */
+    color: white;
     text-align: center;
     padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Add responsive design, animations, and other styles as needed */
+/* Additional styles and media queries as needed */
