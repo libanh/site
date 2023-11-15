@@ -1,280 +1,44 @@
-/* General styling */
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-  font-family: 'Nunito', sans-serif;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 50px 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Navigation bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #542f91;
-  z-index: 1;
-  padding: 10px 20px;
+header {
+    background-color: #4b2e83;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 nav ul li {
-  margin-left: 30px;
-}
-
-nav ul li:first-child {
-  margin-left: 0;
+    float: left;
 }
 
 nav ul li a {
-  font-size: 20px;
-  font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #fff;
+    background-color: #111;
 }
 
-/* Hero section */
-.hero {
-  background-color: #d4af37;
-  padding: 100px 20px;
-  text-align: center;
-  color: #fff;
-  margin-top: 80px;
-}
-
-.hero h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
-/* About section */
-.about {
-  background-color: #fff;
-  padding: 100px 20px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
-.about img {
-  max-width: 100%;
-  margin-bottom: 30px;
-}
-
-/* Research section */
-.research {
-  background-color: #542f91;
-  padding: 100px 20px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-.research h2 {
-  font-size: 36px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.research p {
-  font-size: 20px;
-  color: #fff;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
-.research img {
-  max-width: 100%;
-  margin-bottom: 30px;
-}
-
-/* Publications section */
-.publications {
-  background-color: #fff;
-  padding: 100px 20px;
-  margin-top: 100px;
-}
-
-.publications h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.publications ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.publications li {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.publications li:last-child {
-  margin-bottom: 0;
-}
-/* Awards */
-#awards {
-  background-color: #522d5b;
-  color: #fff;
-  padding: 60px 0;
-  text-align: center;
-}
-#awards h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-#awards p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.award-item {
-  margin-bottom: 30px;
-}
-.award-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #ffc107;
-}
-.award-date {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-.award-description {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Teaching and Outreach */
-#teaching {
-  background-color: #fff;
-  color: #333;
-  padding: 60px 0;
-  text-align: center;
-}
-#teaching h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-#teaching p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.teaching-item {
-  margin-bottom: 30px;
-}
-.teaching-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #522d5b;
-}
-.teaching-date {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-.teaching-description {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Contact */
-#contact {
-  background-color: #522d5b;
-  color: #fff;
-  padding: 60px 0;
-  text-align: center;
-}
-#contact h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-#contact p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.contact-item {
-  margin-bottom: 30px;
-}
-.contact-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #ffc107;
-}
-.contact-info {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ccc;
-}
-
-/* Footer */
-#footer {
-  background-color: #1c1c1c;
-  color: #fff;
-  padding: 30px 0;
-  text-align: center;
-}
-#footer p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-#footer a {
-  color: #fff;
-}
-
-/* Image placeholders */
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 100%;
-  max-width: 300px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
